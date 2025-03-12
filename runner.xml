@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation">
+    <groups>
+        <run>
+            <include name="smoke"></include>
+        </run>
+    </groups>
+
+    <listeners>
+        <listener class-name="Listener"></listener>
+    </listeners>
+
+    <test name="Regression" >
+        <classes>
+            <class name="CartTest"></class>
+            <class name="HomeTest"></class>
+            <class name="SLPTest"></class>
+        </classes>
+    </test>
+</suite>
